@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Your Profile</h1>
+
+    <p>Logged in as: <em>{{ msgphp_user.current.email }}</em></p>
+    <p><a href="{{ path('logout') }}">Logout</a></p>
+{% endblock %}

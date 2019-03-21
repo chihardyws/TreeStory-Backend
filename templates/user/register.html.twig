@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Register</h1>
+
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.password.password) }}
+        {{ form_row(form.password.confirmation) }}
+
+        <div>
+            <input type="submit" value="Register" />
+        </div>
+    {{ form_end(form) }}
+{% endblock %}
